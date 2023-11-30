@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { MotionDiv } from "./MotionDiv";
 
-
 const stagger = 0.25;
 
 const variants = {
@@ -42,7 +41,7 @@ function AnimeCard({ anime, index }: Prop) {
     >
       <div className="relative w-full h-[37vh]">
         <Image
-          src={`https://shikimori.one${anime.image.original}`}
+          src={`https://shikimori.one${anime.image?.original}`}
           alt={anime.name}
           fill
           className="rounded-xl"
